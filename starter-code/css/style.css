@@ -31,6 +31,10 @@
   height: 100%;
   z-index: -1;
 }
+.main {
+  position: relative;
+  height: 800px;
+}
 .main_blk {
   background-color: #151515;
   width: 100%;
@@ -61,6 +65,7 @@
   font-size: 96px;
   line-height: 88px;
   max-width: 450px;
+  mix-blend-mode: difference;
 }
 .main_text {
   width: 350px;
@@ -77,6 +82,7 @@
   display: flex;
   align-items: stretch;
   border: 0;
+  margin-top: 62px;
 }
 .button_text {
   background-color: black;
@@ -105,8 +111,7 @@
 .grid_section {
   display: flex;
   flex-direction: column;
-  /*flex-shrink: 0;*/
-  margin-top: 614px;
+  margin-top: 180px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 180px;
@@ -115,13 +120,12 @@
   background-color: transparent;
   z-index: -1;
   overflow: hidden;
- /* max-width: 88.5%; */ 
 }
 .grid_top {
   width: 1110px;
   height: 400px;
   background-color: transparent;
-  display: flex; /* took way to long to get img in the right place until this*/
+  display: flex; 
 }
 .text_box  { /*the box containing text and image*/
   width: 350px;
@@ -132,7 +136,6 @@
 }
 .text_heading {
   width: 350px;
-  height: 120px;
   color: #151515;
   font-family: Big Shoulders Display;
   font-weight: 1000;
@@ -173,18 +176,12 @@
   margin-top: 30px;
   margin-left: auto;
 }
-.black_box { /*where are you??*/
+.black_box { 
   background-color: black;
   padding: 65px 32px;
   margin-top: 30px;
-  /*overflow: hidden;*/
 }
-.text_box2  { /*the box containing text and image, where are you??*/
-  /*margin-top: 60px;
-  margin-left: 0;
-  margin-bottom: 90px;*/
-}
-.text_heading2 { /*where are you??*/
+.text_heading2 { 
   color: #ffffff;
   font-family: Big Shoulders Display;
   font-weight: 1000;
@@ -192,7 +189,7 @@
   line-height: 70px;
   margin-bottom: 32px;
 }
-.text2 { /*where are you??*/
+.text2 { 
   color: #ffffff;
   font-family: Outfit;
   font-size: 22px;
@@ -248,8 +245,7 @@ height: 20px;
   .main_blk, .main_white {display: none;}
 .max_width_flex {flex-direction: column; padding: 32px 16px}
 .container_main {position: static}
-.main_img {width: 100%;
-height: 240px; object-fit: cover;}
+.main_img {width: 100%; height: 240px; object-fit: cover;}
 .main_heading {color: black; font-size: 60px; line-height: 55px; margin-bottom: 32px;}
 .grid_top {flex-direction: column-reverse; width: 100%; height:auto;}
 .grid_section {margin-top: 104px; padding: 16px;}
@@ -269,5 +265,5 @@ height: 240px; object-fit: cover;}
 .footer {flex-direction: column; padding: 48px 32px; height: auto;}
 .footer_content_box {flex-direction: column; padding: 0; height: auto;}
 .footer_info {width: 100%; height: auto; margin: 24px 0;}
-
+.main {height: auto;}
 }
